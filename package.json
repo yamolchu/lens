@@ -1,0 +1,29 @@
+{
+  "name": "lens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx ts-node ./src/index.ts",
+    "start": "npm run build && node ./dist/index.js",
+    "build": "rimraf ./dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "prettier": "^3.0.2",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "csv-writer": "^1.6.0",
+    "ethers": "^6.8.0",
+    "https-proxy-agent": "^7.0.1",
+    "socks-proxy-agent": "^8.0.1",
+    "user-agents": "^1.0.1444"
+  }
+}
